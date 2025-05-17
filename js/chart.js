@@ -1,4 +1,4 @@
-    const ctx = document.getElementById('salesBarChart').getContext('2d');
+    const ctx = document.getElementById('BarChart').getContext('2d');
     new Chart(ctx, {
     type: 'bar', // You can change to 'pie' or 'doughnut'
     data: {
@@ -22,7 +22,7 @@
     }
 });
 
-    const ctxLine = document.getElementById('salesLineChart').getContext('2d');
+    const ctxLine = document.getElementById('LineChart').getContext('2d');
     new Chart(ctxLine, {
         type: 'line',
         data: {
@@ -42,7 +42,7 @@
         }
     });
 
-    const ctxPie = document.getElementById('salesPieChart').getContext('2d');
+    const ctxPie = document.getElementById('PieChart').getContext('2d');
     new Chart(ctxPie, {
         type: 'pie',
         data: {

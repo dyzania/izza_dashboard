@@ -42,9 +42,8 @@ if (isset($_POST['submit'])) {
     $state->bind_param("ss", $name, $year_level);
 
     if ($state->execute()) {
-        // Redirect to prevent duplicate on refresh
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
+         header("Location: " . $_SERVER['PHP_SELF']);
+        exit(); // Prevent further script execution
     } else {
         echo "Error: " . $conn->error;
     }
@@ -91,13 +90,13 @@ if (isset($_POST['submit'])) {
 
         <div class="data">
 
-            <canvas id="salesBarChart"></canvas>
-            <canvas id="salesLineChart"></canvas>
-            <canvas id="salesPieChart"></canvas>
+            <canvas id="BarChart"></canvas>
+            <canvas id="LineChart"></canvas>
+            <canvas id="PieChart"></canvas>
         
         </div>
 
-        <div class="add" style="margin: 12px;">
+        <div class="add" style="margin: 20px;">
             <form method="POST" action="">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="year_level" placeholder="Year Level" required>
