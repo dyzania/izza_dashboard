@@ -1,0 +1,65 @@
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+.dashboard-container {
+    width: 90%;
+    height: fit-content;
+    margin-top: 40px;
+    background: linear-gradient(to bottom, rgba(209, 43, 31, 0.3), rgba(0, 125, 54, 0.3), rgba(246, 198, 0, 0.3));;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+
+}
+.canvas-container {
+    display: flex;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    padding: 20px;
+}
+
+.data canvas {
+    width: 400px !important;
+    height: 300px !important;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 0;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    color: aliceblue;
+}
+.wrapper {
+    background-color: aquamarine;
+    height: 120px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rect {
+    background-color: white;
+    width: 24%;
+    margin: 6px 0px 6px 0px;
+    padding: 12px;
+}
+form {
+    text-align: center;
+}
+
+
